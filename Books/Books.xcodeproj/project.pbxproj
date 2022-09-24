@@ -20,6 +20,7 @@
 		6016AEA828DCF4E900E66076 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6016AEA728DCF4E900E66076 /* Extension.swift */; };
 		6016AEAA28DD03B500E66076 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6016AEA928DD03B500E66076 /* Globals.swift */; };
 		6016AEAD28DD0C8800E66076 /* DatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6016AEAC28DD0C8800E66076 /* DatabaseHandler.swift */; };
+		60275FCD28DF1F11003FF95C /* SearchBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60275FCC28DF1F11003FF95C /* SearchBookCell.swift */; };
 		60A2D9F728DF0DD9008A9483 /* AllBooksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A2D9F628DF0DD9008A9483 /* AllBooksCell.swift */; };
 		60A2D9F928DF0F71008A9483 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A2D9F828DF0F71008A9483 /* Book.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		6016AEA728DCF4E900E66076 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		6016AEA928DD03B500E66076 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		6016AEAC28DD0C8800E66076 /* DatabaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHandler.swift; sourceTree = "<group>"; };
+		60275FCC28DF1F11003FF95C /* SearchBookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookCell.swift; sourceTree = "<group>"; };
 		60A2D9F628DF0DD9008A9483 /* AllBooksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBooksCell.swift; sourceTree = "<group>"; };
 		60A2D9F828DF0F71008A9483 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +100,7 @@
 				6016AEA528DCE64400E66076 /* FavoritesVC.swift */,
 				60A2D9F628DF0DD9008A9483 /* AllBooksCell.swift */,
 				60A2D9F828DF0F71008A9483 /* Book.swift */,
+				60275FCC28DF1F11003FF95C /* SearchBookCell.swift */,
 			);
 			path = "Main Tabbar";
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				6016AE8928DCE40700E66076 /* AppDelegate.swift in Sources */,
 				6016AE8B28DCE40700E66076 /* SceneDelegate.swift in Sources */,
 				60A2D9F928DF0F71008A9483 /* Book.swift in Sources */,
+				60275FCD28DF1F11003FF95C /* SearchBookCell.swift in Sources */,
 				60A2D9F728DF0DD9008A9483 /* AllBooksCell.swift in Sources */,
 				6016AEA828DCF4E900E66076 /* Extension.swift in Sources */,
 				6016AEAA28DD03B500E66076 /* Globals.swift in Sources */,
@@ -334,6 +338,7 @@
 				DEVELOPMENT_TEAM = 94QU8AXTK9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Books/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -362,6 +367,7 @@
 				DEVELOPMENT_TEAM = 94QU8AXTK9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Books/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
