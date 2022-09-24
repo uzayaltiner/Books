@@ -20,6 +20,8 @@
 		6016AEA828DCF4E900E66076 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6016AEA728DCF4E900E66076 /* Extension.swift */; };
 		6016AEAA28DD03B500E66076 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6016AEA928DD03B500E66076 /* Globals.swift */; };
 		6016AEAD28DD0C8800E66076 /* DatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6016AEAC28DD0C8800E66076 /* DatabaseHandler.swift */; };
+		60A2D9F728DF0DD9008A9483 /* AllBooksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A2D9F628DF0DD9008A9483 /* AllBooksCell.swift */; };
+		60A2D9F928DF0F71008A9483 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A2D9F828DF0F71008A9483 /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		6016AEA728DCF4E900E66076 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		6016AEA928DD03B500E66076 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		6016AEAC28DD0C8800E66076 /* DatabaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHandler.swift; sourceTree = "<group>"; };
+		60A2D9F628DF0DD9008A9483 /* AllBooksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBooksCell.swift; sourceTree = "<group>"; };
+		60A2D9F828DF0F71008A9483 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,8 @@
 				6016AEA128DCE60F00E66076 /* HomeVC.swift */,
 				6016AEA328DCE63900E66076 /* SearchVC.swift */,
 				6016AEA528DCE64400E66076 /* FavoritesVC.swift */,
+				60A2D9F628DF0DD9008A9483 /* AllBooksCell.swift */,
+				60A2D9F828DF0F71008A9483 /* Book.swift */,
 			);
 			path = "Main Tabbar";
 			sourceTree = "<group>";
@@ -175,6 +181,8 @@
 				6016AEAD28DD0C8800E66076 /* DatabaseHandler.swift in Sources */,
 				6016AE8928DCE40700E66076 /* AppDelegate.swift in Sources */,
 				6016AE8B28DCE40700E66076 /* SceneDelegate.swift in Sources */,
+				60A2D9F928DF0F71008A9483 /* Book.swift in Sources */,
+				60A2D9F728DF0DD9008A9483 /* AllBooksCell.swift in Sources */,
 				6016AEA828DCF4E900E66076 /* Extension.swift in Sources */,
 				6016AEAA28DD03B500E66076 /* Globals.swift in Sources */,
 			);

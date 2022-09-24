@@ -17,7 +17,6 @@ class MainTabbar: UITabBarController, UITabBarControllerDelegate {
         super.viewDidLayoutSubviews()
         
         tabBar.backgroundColor = UIColor(red: 0.94, green: 0.94, blue: 0.94, alpha: 1)
-        tabBar.isOpaque = true
     }
     
     override func viewWillAppear(_ animated: Bool) {

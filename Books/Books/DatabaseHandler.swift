@@ -8,9 +8,10 @@
 import Foundation
 import UIKit
 
-final class DatabaseHandler{
-    
-    func fetchBooksFromAPI(){
-        
+final class DatabaseHandler {
+    init() {
+        fetchBooksFromAPI()
     }
+
+    func fetchBooksFromAPI() {}
 }
