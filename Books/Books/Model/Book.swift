@@ -25,3 +25,4 @@ class Book {
 
 var books = [Book]()
 var favBooks = [Book]()
+var sortedBooks = [Book]()

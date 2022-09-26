@@ -4,6 +4,7 @@
         <attribute name="author" optional="YES" attributeType="String"/>
         <attribute name="date" optional="YES" attributeType="String"/>
         <attribute name="img" optional="YES" attributeType="String"/>
+        <attribute name="isFav" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
     </entity>
 </model>

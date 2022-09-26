@@ -14,7 +14,9 @@ class DatabaseHandler {
     }
 
     func fetchBooksFromAPI() {
-        let url = URL(string: "https://rss.applemarketingtools.com/api/v2/tr/books/top-free/50/books.json")
+        let url = URL(string: "https://rss.applemarketingtools.com/api/v2/tr/books/top-free/100/books.json")
+
+        // MARK: - Pagination için api'ı page'lerine ayıramadım.
 
         let session = URLSession.shared
 
@@ -33,28 +35,29 @@ class DatabaseHandler {
                                     for result in results {
                                         let newBook = Book()
                                         if let name = result["name"] {
-                                            if let author = result["artistName"] {
-                                                if let date = result["releaseDate"] {
-                                                    if let imgUrl = result["artworkUrl100"] {
-                                                        newBook.date = (date as! String)
-                                                        newBook.author = (author as! String)
-                                                        newBook.name = (name as! String)
-                                                        newBook.image = (imgUrl as! String)
-                                                        if favBooks.contains(where: {$0.name == newBook.name}) {
-                                                            newBook.isFavorite = true
+                                            newBook.name = (name as! String)
+                                            if !books.contains(where: { $0.name == newBook.name }) {
+                                                if let author = result["artistName"] {
+                                                    if let date = result["releaseDate"] {
+                                                        if let imgUrl = result["artworkUrl100"] {
+                                                            newBook.date = (date as! String)
+                                                            newBook.author = (author as! String)
+
+                                                            newBook.image = (imgUrl as! String)
+                                                            if favBooks.contains(where: { $0.name == newBook.name }) {
+                                                                newBook.isFavorite = true
+                                                            } else {
+                                                                newBook.isFavorite = false
+                                                            }
                                                         }
-                                                        
                                                     }
                                                 }
+
+                                                books.append(newBook)
                                             }
                                         }
-
-                                        if !books.contains(where: { $0.name == newBook.name }) {
-                                            books.append(newBook)
-                                        }
-
-                                        NotificationCenter.default.post(name: NSNotification.Name("reloadData"), object: nil)
                                     }
+                                    NotificationCenter.default.post(name: NSNotification.Name("reloadData"), object: nil)
                                 }
                             }
                         }

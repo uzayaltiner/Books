@@ -18,19 +18,19 @@ class AllBooksCell: UICollectionViewCell {
         bookNameLabel.text = book.name
 
         if book.isFavorite == true {
-            favButton.tintColor = .yellow
+            favButton.tintColor = .systemYellow
         } else {
             favButton.tintColor = .systemGray
         }
     }
 
     @IBAction func favButtonTapped(_ sender: UIButton) {
-        if books[sender.tag].isFavorite != true {
-            CoreDataHandler().saveToCoreData(senderTag: sender.tag)
-        } else {
-            if favBooks.contains(where: { $0.name == books[sender.tag].name }) {}
+        let choosenBook = sortedBooks[sender.tag]
+        if choosenBook.isFavorite != true {
+            if let index = books.firstIndex(where: { $0.name == choosenBook.name }) {
+                books[index].isFavorite = true
+                CoreDataHandler().saveToCoreData(choosenBook: choosenBook)
+            }
         }
-        books[sender.tag].isFavorite?.toggle()
-        NotificationCenter.default.post(name: NSNotification.Name("reloadData"), object: nil)
     }
 }

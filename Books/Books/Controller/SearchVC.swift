@@ -25,7 +25,12 @@ class SearchVC: UIViewController, UISearchBarDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(reloadCollection), name: NSNotification.Name("reloadData"), object: nil)
     }
 
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name("reloadData"), object: nil)
+    }
+
     @objc func reloadCollection() {
+        filteredBooks = books
         searchTableView.reloadData()
     }
 
@@ -50,7 +55,7 @@ class SearchVC: UIViewController, UISearchBarDelegate {
         } else {
             searchStyleBtn.setTitle("author", for: .normal)
         }
-        
+
         isSearchByName.toggle()
     }
 }
@@ -64,5 +69,17 @@ extension SearchVC: UITableViewDelegate, UITableViewDataSource {
         let cell = searchTableView.dequeueReusableCell(withIdentifier: "SearchBookCell") as! SearchBookCell
         cell.setup(with: filteredBooks[indexPath.row])
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let choosenBook = filteredBooks[indexPath.row]
+        performSegue(withIdentifier: "toDetailVC", sender: choosenBook)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetailVC" {
+            let detailController = segue.destination as! DetailVC
+            detailController.choosenBook = sender as! Book
+        }
     }
 }

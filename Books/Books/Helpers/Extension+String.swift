@@ -11,10 +11,7 @@ extension String {
     func toDateTime() -> Date {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
-
-        let dateFromString = dateFormatter.date(from: self)!
-
-        // Return Parsed Date
+        let dateFromString = dateFormatter.date(from: self) ?? Date()
         return dateFromString
     }
 }
