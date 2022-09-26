@@ -21,6 +21,10 @@
 		6016AEAA28DD03B500E66076 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6016AEA928DD03B500E66076 /* Globals.swift */; };
 		6016AEAD28DD0C8800E66076 /* DatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6016AEAC28DD0C8800E66076 /* DatabaseHandler.swift */; };
 		60275FCD28DF1F11003FF95C /* SearchBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60275FCC28DF1F11003FF95C /* SearchBookCell.swift */; };
+		60988FCC28DF3FBC00E0B4F4 /* FavBooksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60988FCB28DF3FBC00E0B4F4 /* FavBooksCell.swift */; };
+		60988FCE28E0D9A200E0B4F4 /* Extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60988FCD28E0D9A200E0B4F4 /* Extension+UIImageView.swift */; };
+		60988FD028E0E3C800E0B4F4 /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60988FCF28E0E3C800E0B4F4 /* CoreDataHandler.swift */; };
+		60988FD228E0F2BF00E0B4F4 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60988FD128E0F2BF00E0B4F4 /* Extension+String.swift */; };
 		60A2D9F728DF0DD9008A9483 /* AllBooksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A2D9F628DF0DD9008A9483 /* AllBooksCell.swift */; };
 		60A2D9F928DF0F71008A9483 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A2D9F828DF0F71008A9483 /* Book.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +46,10 @@
 		6016AEA928DD03B500E66076 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		6016AEAC28DD0C8800E66076 /* DatabaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHandler.swift; sourceTree = "<group>"; };
 		60275FCC28DF1F11003FF95C /* SearchBookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookCell.swift; sourceTree = "<group>"; };
+		60988FCB28DF3FBC00E0B4F4 /* FavBooksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavBooksCell.swift; sourceTree = "<group>"; };
+		60988FCD28E0D9A200E0B4F4 /* Extension+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImageView.swift"; sourceTree = "<group>"; };
+		60988FCF28E0E3C800E0B4F4 /* CoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
+		60988FD128E0F2BF00E0B4F4 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		60A2D9F628DF0DD9008A9483 /* AllBooksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBooksCell.swift; sourceTree = "<group>"; };
 		60A2D9F828DF0F71008A9483 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,10 +91,12 @@
 				6016AEA728DCF4E900E66076 /* Extension.swift */,
 				6016AE8E28DCE40700E66076 /* Main.storyboard */,
 				6016AEAC28DD0C8800E66076 /* DatabaseHandler.swift */,
+				60988FCF28E0E3C800E0B4F4 /* CoreDataHandler.swift */,
 				6016AE9428DCE40900E66076 /* Assets.xcassets */,
 				6016AE9628DCE40900E66076 /* LaunchScreen.storyboard */,
 				6016AE9928DCE40900E66076 /* Info.plist */,
 				6016AE9128DCE40700E66076 /* Books.xcdatamodeld */,
+				60988FD128E0F2BF00E0B4F4 /* Extension+String.swift */,
 			);
 			path = Books;
 			sourceTree = "<group>";
@@ -101,6 +111,8 @@
 				60A2D9F628DF0DD9008A9483 /* AllBooksCell.swift */,
 				60A2D9F828DF0F71008A9483 /* Book.swift */,
 				60275FCC28DF1F11003FF95C /* SearchBookCell.swift */,
+				60988FCB28DF3FBC00E0B4F4 /* FavBooksCell.swift */,
+				60988FCD28E0D9A200E0B4F4 /* Extension+UIImageView.swift */,
 			);
 			path = "Main Tabbar";
 			sourceTree = "<group>";
@@ -177,11 +189,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6016AEA428DCE63900E66076 /* SearchVC.swift in Sources */,
+				60988FD028E0E3C800E0B4F4 /* CoreDataHandler.swift in Sources */,
 				6016AEA028DCE57B00E66076 /* MainTabbar.swift in Sources */,
+				60988FD228E0F2BF00E0B4F4 /* Extension+String.swift in Sources */,
+				60988FCC28DF3FBC00E0B4F4 /* FavBooksCell.swift in Sources */,
 				6016AEA228DCE60F00E66076 /* HomeVC.swift in Sources */,
 				6016AE9328DCE40700E66076 /* Books.xcdatamodeld in Sources */,
 				6016AEA628DCE64400E66076 /* FavoritesVC.swift in Sources */,
 				6016AEAD28DD0C8800E66076 /* DatabaseHandler.swift in Sources */,
+				60988FCE28E0D9A200E0B4F4 /* Extension+UIImageView.swift in Sources */,
 				6016AE8928DCE40700E66076 /* AppDelegate.swift in Sources */,
 				6016AE8B28DCE40700E66076 /* SceneDelegate.swift in Sources */,
 				60A2D9F928DF0F71008A9483 /* Book.swift in Sources */,

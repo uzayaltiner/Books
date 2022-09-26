@@ -11,24 +11,17 @@ import UIKit
 class Book {
     var name: String?
     var author: String?
-    var image: UIImage?
+    var image: String?
+    var date: String?
+    var isFavorite: Bool?
 
-    init(name: String? = nil, author: String? = nil, image: UIImage? = nil) {
+    init(name: String? = nil, author: String? = nil, image: String? = nil, date: String? = nil, isFavorite: Bool? = false) {
         self.name = name
         self.author = author
         self.image = image
+        self.date = date
     }
 }
 
-let books: [Book] = [
-    Book(name: "adas", author: "asdaskd", image: UIImage(systemName: "star")),
-    Book(name: "adas", author: "asdaskd", image: UIImage(systemName: "star")),
-    Book(name: "adas", author: "asdaskd", image: UIImage(systemName: "star")),
-    Book(name: "adas", author: "asdaskd", image: UIImage(systemName: "star")),
-    Book(name: "adas", author: "asdaskd", image: UIImage(systemName: "star")),
-    Book(name: "adas", author: "asdaskd", image: UIImage(systemName: "star")),
-    Book(name: "adas", author: "asdaskd", image: UIImage(systemName: "star")),
-    Book(name: "adas", author: "asdaskd", image: UIImage(systemName: "star")),
-    Book(name: "adas", author: "asdaskd", image: UIImage(systemName: "star")),
-    Book(name: "adas", author: "asdaskd", image: UIImage(systemName: "star"))
-]
+var books = [Book]()
+var favBooks = [Book]()
